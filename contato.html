@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Contato.css">
+        <title>Barbearia Alura</title>
+    </head>
+<body>
+    <header>
+        <nav class="container-menu">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div class="nome-contato">
+        <img class="logos" src="imagens/logo.png" alt="Logo da barbearia Alura">
+        <h1>Contato</h1>
+        <img class="logos" src="imagens/logo.png" alt="Logo da barbearia Alura">
+    </div>
+
+    
+    <main>
+        <form>
+            <label for="nome-sobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nome-sobrenome" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="Seuemail@domonio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" required placeholder="(00) 00000-0000">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem" required placeholder="Deixe uma mensagem para nós!"></textarea>
+            
+        <fieldset>
+            <legend>Como prefere o nosso contato?</legend>
+            <label for="radio-email">Email</label>
+            <input type="radio" value="email" class="checkbox" name="contato">
+
+            <label for="radio-telefone">Telefone</label>
+            <input type="radio" value="email" class="checkbox" name="contato">
+
+            <label for="radio-whatsapp">Whatsapp</label>
+            <input type="radio" value="email" class="checkbox" name="contato" checked>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+        </fieldset>
+
+        <label id="novidades">Gostaria de receber nossas novidades por email? <input type="checkbox" id="notificação-email"></label>
+
+            <input type="submit" value="Enviar Formulário" name="" id="enviar">
+
+        </form>
+    </main>
+    <div class="container-tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+    <footer id="rodape">
+        <ul>
+            <li><p>Luan Cordeiro</p></li>
+            <li><a href="https://github.com/Luanlrc">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/luan-cordeiroo/">Linkedin</a></li>
+
+        </ul>
+    </footer>
+</html>
