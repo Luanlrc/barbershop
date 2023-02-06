@@ -8,20 +8,17 @@ header{
 
 .container-menu{
     display: flex;
-    align-items: center;
-    width: 100%;
+    justify-content: center;
+    
 
 }
 
 .menu{
     list-style: none;
     display: flex;
-    width: 100%;
+    width: 40%;
     justify-content: space-between;
-    margin-left: 35%;
-    margin-right: 35%;
-
-
+    
 }
 
 .menu a{
@@ -30,7 +27,6 @@ header{
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(187, 187, 187);
     color: #d3d3d3;
-
 }
 
 .menu a:hover{
@@ -44,10 +40,15 @@ body{
     background-image: url("imagens/background-barbearia.png");
 
 }
+
+.logo-barbearia{
+    display: flex;
+    justify-content: center;
+}
+
 .nome-barbearia{
     display: flex;
     justify-content: center;
-    justify-content: space-between;
     color: #b6b6b6;
     font-size: 70px;
     -webkit-text-stroke-width: 2px;
@@ -57,7 +58,7 @@ body{
 }
 
 .nome-barbearia h1{
-    margin-top: 220px;
+    margin-top: 120px;
 
 }
 
@@ -106,11 +107,13 @@ body{
     width: 350px;
     height: 250px;
     text-align: center;
+    padding: 10px 0;
+    box-shadow: 20px 20px 10px #000000;
 }
 
 #beneficios h3{
     margin-top: 15px;
-    margin-bottom: 32px;
+    margin-bottom: 25px;
     font-size: 30px;
 }
 .beneficios ul{
@@ -121,6 +124,46 @@ body{
 
 .itens{
     margin-bottom: 10px;
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.container-mapa{
+
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.mapa h3{
+    margin-bottom:15px ;
+    text-align: center;
+    font-size: 40px;
+    color: #CCCCCC;
+}
+
+.mapa p{
+    margin: 0 0 1em;
+    text-align: center;
+    color: #CCCCCC;
+    font-size: 20px;
+}
+
+.mapa iframe{
+    width: 100% ;
+
+
+    
+}
+
+.container-video{
+    display: flex;
+    justify-content: center;  
+    margin-top: 50px;  
 }
 
 footer{
@@ -143,5 +186,39 @@ footer li a{
 
 footer li a{
     margin-bottom: 5px;
+
+}
+
+@media screen and (max-width: 480px){
+
+    
+    .menu{
+        width: 65%;
+        margin-right: 10%;
+        
+    }
+    .menu a{
+        font-size: 25px;
+    }
+    .nome-barbearia h1{
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+    .container-map{
+        width: 100%;
+        margin: 0%;
+    }
+
+    .mapa h3{
+        margin-bottom:15px ;
+        text-align: center;
+        font-size: 30px;
+        color: #CCCCCC;
+    }
+    
+    .mapa p{
+        font-size: 20px;
+    }
 
 }
